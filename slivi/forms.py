@@ -7,8 +7,7 @@ class CaptchaForm(forms.ModelForm):
     class Meta:
         model = Captcha
         fields = [
-            "captcha_text",
-            "captcha_image"
+            "captcha_text"
         ]
 
 
