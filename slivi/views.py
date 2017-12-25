@@ -47,18 +47,18 @@ def get(request):
             t.save()
 
 
-            return HttpResponseRedirect('/slivi/thanks')
+            return HttpResponseRedirect('/slivi')
     else:
         form = CaptchaForm()
     return render(request, template_name, {'form':form})
 
 
-def thanks(request):
 
-    template_thankyou='slivi/thanks.html'
-    template = loader.get_template(template_thankyou)
 
-    return render(request, template_thankyou)
+
+
+
+
 
 
 
